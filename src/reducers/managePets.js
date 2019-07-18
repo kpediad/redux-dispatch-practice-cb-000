@@ -20,4 +20,4 @@ export function render(){
   document.getElementById('container').innerHTML = '<ul>' + state.pets.map(pet => `<li>${pet.name}</li>`) + '</ul>';
 }
 
-dispatch({type: '@@INIT'});
+// dispatch({type: '@@INIT'});
