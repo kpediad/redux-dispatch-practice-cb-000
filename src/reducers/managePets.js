@@ -2,7 +2,7 @@ export let state;
 
 
 export function managePets(state, action){
-  switch (action.type) { 
+  switch (action.type) {
       case 'ADD_PET':
         return { count: state.count + 1 }
       case 'REMOVE_PET':
@@ -18,5 +18,5 @@ export function dispatch(){
 }
 
 export function render(){
-  document.getElementById('container').innerHTML = '<ul>' + state.pets.map(pet => `<li>${pet.name}</li>`) + '</ul>'; 
+  document.getElementById('container').innerHTML = '<ul>' + state.pets.map(pet => `<li>${pet.name}</li>`) + '</ul>';
 }
